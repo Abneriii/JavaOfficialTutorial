@@ -1,2 +1,2 @@
 # JavaOfficialTutorialQandE
-Questions and Exercises in Java official tutorial.  url:https://docs.oracle.com/javase/tutorial/
+Record code when learning Java tutorial. url:https://docs.oracle.com/javase/tutorial/
