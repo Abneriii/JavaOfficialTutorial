@@ -37,24 +37,24 @@ public class Exercises {
      * Class Album doesn't need to be defined,you just need to modify the the code downside.
      *
      */
-
-    List<Album> favs = new ArrayList<>();
-    for(Album a :albums){
-        boolean hasFavorite = false;
-        for (Track t : a.tracks) {
-            if (t.rating >= 4) {
-                hasFavorite = true;
-                break;
-            }
-        }
-        if (hasFavorite)
-            favs.add(a);
-    }
-    Collections.sort(favs,new Comparator<Album>(){
-        public int compare (Album a1, Album a2){
-        return a1.name.compareTo(a2.name);
-    }
-    });
+//
+//    List<Album> favs = new ArrayList<>();
+//    for(Album a :albums){
+//        boolean hasFavorite = false;
+//        for (Track t : a.tracks) {
+//            if (t.rating >= 4) {
+//                hasFavorite = true;
+//                break;
+//            }
+//        }
+//        if (hasFavorite)
+//            favs.add(a);
+//    }
+//    Collections.sort(favs,new Comparator<Album>(){
+//        public int compare (Album a1, Album a2){
+//        return a1.name.compareTo(a2.name);
+//    }
+//    });
 
     /**
      * the followings are written by hou
@@ -73,15 +73,16 @@ public class Exercises {
      *
      */
 
-    albums.stream().forEach(album->album.tracks.stream().foreach(t->t.rating>=4)).sotred();
-
+//    albums.stream().forEach(album->album.tracks.stream().foreach(t->t.rating>=4)).sotred();
+//
 
     /*Exercise2:official answer*/
-    List<Album> sortedFavs =
-            albums.stream()
-                    .filter(a -> a.tracks.anyMatch(t -> (t.rating >= 4)))
-                    .sorted(Comparator.comparing(a -> a.name))
-                    .collect(Collectors.toList());
-
-
+//    List<Album> sortedFavs =
+//            albums.stream()
+//                    .filter(a -> a.tracks.anyMatch(t -> (t.rating >= 4)))
+//                    .sorted(Comparator.comparing(a -> a.name))
+//                    .collect(Collectors.toList());
+//
+//
+//
 }
