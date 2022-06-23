@@ -60,7 +60,7 @@ public class Exercises {
      * the followings are written by hou
      *
      *
-     * Exercise2:hou answer.  wrong!
+     * Exercise2----hou answer.  wrong!
      *
      * 1.albums has already become stream so you don't need to call stream again
      * 2.whats the difference between forEach() and filter()? when to use them?
